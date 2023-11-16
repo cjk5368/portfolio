@@ -1,0 +1,270 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 18pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #c5c6c7;
+    margin: 0;
+}
+
+header{
+    background-color: #1f2833;
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    color: #66fcf1;
+}
+
+main{
+    background-color: #0b0c10;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background-color: #1f2833;
+    margin: 0;
+    padding: 0;
+}
+
+.label {
+    text-indent: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+    border: 2px dashed #66fcf1;
+    margin: 0;
+}
+
+h1{
+    font-size: 36pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    font-size: 24pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main h1, h2{
+    color: #66fcf1;
+}
+
+a:link {color: #ffffff;}
+a:visited {color: #c5c6c7;}
+a:focus {color: #136F63;}
+a:hover {color: #136F63;}
+a:active {color: #136F63;}
+
+nav a{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18pt;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    #navigation{
+        flex-direction: column;
+        margin: auto 50px;
+        text-align: center;
+    }
+}
+
+#navigation a{
+    background-color: #45a29e;
+    padding: 1rem;
+    border: 3px solid #66fcf1;
+    font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#head{
+    display: grid;
+    width: 50vw;
+    margin: auto;
+    padding: 30px;
+    grid-column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    grid-template-areas: "pfp name"
+                        "pfp title";
+}
+
+@media screen and (max-width: 800px) {
+    #head {
+        grid-template-areas: "pfp"
+                            "name"
+                            "title";
+    }
+}
+
+#pfp{
+    grid-area: pfp;
+    max-width: 300px;
+    max-height: 300px;
+    border: 3px solid #66fcf1;
+    margin: auto;
+}
+
+#name{
+    grid-area: name;
+}
+
+#title{
+    grid-area: title;
+}
+
+#aboutparagraph{
+    display: flex;
+    margin: 20px 50px;
+    padding: 2rem;
+    background-color: #1f2833;
+    line-height: 2em;
+}
+
+#projectgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin: 20px 50px;
+    padding: 2rem;
+    justify-content: center;
+    background-color: #1f2833;
+    text-align: center;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 800px) {
+    #projectgrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+#projectgrid div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 30px;
+    border: 3px dashed #66fcf1;
+}
+
+#projectgrid a{
+    text-align: left;
+}
+
+#projectgrid img{
+    width: 250px;
+    height: 250px;
+    justify-self: center;
+    border: 3px solid #66fcf1;
+}
+
+#sections{
+    display: grid;
+    margin: 20px 50px;
+    justify-content: space-between;
+}
+
+.subsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1f2833;
+    line-height: 2em;
+}
+
+.subsection p{
+    margin: 50px;
+}
+
+.subsection img{
+    max-width: 600px;
+    max-height: 400px;
+    justify-self: center;
+    border: 3px solid #66fcf1;
+}
+
+@media screen and (max-width: 800px) {
+    #sections{
+        margin: auto;
+    }
+
+    .subsection p{
+        margin: 20px;
+    }
+    .subsection img{
+        width: 60vw;
+        height: 40vw;
+    }
+}
+
+#resumeimg{
+    width: 70vw;
+    height: 1200px;
+    display: block;
+    margin: 20px auto;
+}
+
+#contactinfo{
+    display: flex;
+    flex-direction: column;
+    text-indent: 50px;
+    margin: auto;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1500px) {
+    #contactinfo {
+        font-size: 1.5rem;
+    }
+}
+
+#contactinfo p{
+    display: inline;
+}
+
+footer img{
+    display: inline;
+    width: 1em;
+}
+
+footer h2{
+    margin: 0;
+    padding: 1rem;
+}
+
+#return{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18pt;
+    padding: 1rem;
+}
+
+#return a{
+    background-color: #45a29e;
+    padding: 1rem;
+    border: 3px solid #66fcf1;
+}
